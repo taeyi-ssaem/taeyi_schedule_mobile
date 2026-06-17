@@ -151,5 +151,19 @@ window.SCHEDULE_DATA = {
       "notionId": "3827851f-c778-813e-8661-fa151968c207"
     }
   ],
-  "recurring": []
+  "recurring": [
+    {
+      "id": "rtmp",
+      "title": "_자동푸시테스트_",
+      "freq": "weekly",
+      "category": "개인·루틴",
+      "byday": [
+        1
+      ],
+      "monthday": 1,
+      "time": "",
+      "memo": "",
+      "active": true
+    }
+  ]
 };
