@@ -96,12 +96,18 @@ function itemHTML(it){
     <div class="tags"><span class="tag cat" style="background:${col(it.category)}">${emo(it.category)} ${it.category}</span>${rems}${regs}</div>
   </div><div class="dd ${dd.c}">${dd.t}<small>${dd.s}</small></div></div>`;
 }
+let mPastOpen=false;try{mPastOpen=JSON.parse(localStorage.getItem("iljeong_m_pastopen"))||false;}catch(e){}
+function togglePast(){mPastOpen=!mPastOpen;try{localStorage.setItem("iljeong_m_pastopen",JSON.stringify(mPastOpen));}catch(e){}renderList();}
 function renderList(){
   const all=items().sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:(a.time||"").localeCompare(b.time||""));
   const g={over:[],today:[],week:[],later:[]};
   all.forEach(it=>{const n=diff(it.date);if(n<0)g.over.push(it);else if(n===0)g.today.push(it);else if(n<=7)g.week.push(it);else g.later.push(it);});
   const sec=(title,arr,cls)=>arr.length?`<h2 class="sec ${cls||''}">${title} <span class="badge">${arr.length}</span></h2>`+arr.map(itemHTML).join(""):"";
-  let h=sec("⚠️ 지난 (미완료)",g.over,"danger")+sec("🔴 오늘",g.today)+sec("📅 다가오는 일정",g.week)+sec("🗓 그 이후",g.later);
+  let h=sec("🔴 오늘",g.today)+sec("📅 다가오는 일정",g.week)+sec("🗓 그 이후",g.later);
+  if(g.over.length){
+    h+=`<h2 class="sec danger" style="cursor:pointer" onclick="togglePast()">⚠️ 지난 (미완료) <span class="badge">${g.over.length}</span> <span style="font-size:11px;color:var(--sub);font-weight:600">${mPastOpen?'▾ 접기':'▸ 보기'}</span></h2>`;
+    if(mPastOpen)h+=g.over.map(itemHTML).join("");
+  }
   document.getElementById("list").innerHTML=h||`<div class="empty">예정된 일정이 없어요 🎉</div>`;
 }
 function renderDday(){
