@@ -167,6 +167,24 @@ window.SCHEDULE_DATA = {
       "registered": {
         "notion": true
       }
+    },
+    {
+      "id": "app-1783999803532-460",
+      "title": "오늘까지 할 일",
+      "date": "2026-07-14",
+      "time": "",
+      "endTime": "",
+      "category": "담임업무",
+      "type": "task",
+      "location": "",
+      "memo": "",
+      "attachments": [],
+      "reminders": [],
+      "done": false,
+      "notionId": "39d7851f-c778-81a2-8631-e2e56dd565d1",
+      "registered": {
+        "notion": true
+      }
     }
   ],
   "recurring": [],
