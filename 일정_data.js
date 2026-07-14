@@ -3,7 +3,7 @@
 //  ※ 웹앱/클로드가 자동 갱신합니다. 직접 수정하지 마세요.
 // ============================================================
 window.SCHEDULE_DATA = {
-  "updated": "2026-06-17",
+  "updated": "2026-07-14",
   "categories": {
     "학사일정": {
       "color": "#2563eb",
@@ -149,7 +149,33 @@ window.SCHEDULE_DATA = {
         "notion": true
       },
       "notionId": "3827851f-c778-813e-8661-fa151968c207"
+    },
+    {
+      "id": "app-1783999579478",
+      "title": "나이스 근무상황",
+      "date": "2026-07-14",
+      "time": "15:30",
+      "endTime": "",
+      "category": "담임업무",
+      "type": "event",
+      "location": "",
+      "memo": "방학 중 나이스 근무상황 상신, IB연수는 근무로 상신",
+      "attachments": [],
+      "reminders": [],
+      "done": false,
+      "notionId": "39d7851f-c778-81b2-ad64-e142ce6e231b",
+      "registered": {
+        "notion": true
+      }
     }
   ],
-  "recurring": []
+  "recurring": [],
+  "done": [
+    "task-20260612-minwoo-seoryu",
+    "evt-20260618-suwon-fieldtrip",
+    "app-1781694078046",
+    "app-1781694048363",
+    "task-20260618-call-0900",
+    "task-20260618-call-1130"
+  ]
 };
