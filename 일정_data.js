@@ -3,7 +3,7 @@
 //  ※ 웹앱/클로드가 자동 갱신합니다. 직접 수정하지 마세요.
 // ============================================================
 window.SCHEDULE_DATA = {
-  "updated": "2026-07-14",
+  "updated": "2026-07-20",
   "categories": {
     "학사일정": {
       "color": "#2563eb",
@@ -182,6 +182,24 @@ window.SCHEDULE_DATA = {
       "reminders": [],
       "done": false,
       "notionId": "39d7851f-c778-81a2-8631-e2e56dd565d1",
+      "registered": {
+        "notion": true
+      }
+    },
+    {
+      "id": "app-1784513949224",
+      "title": "곡정초 방과후 업무, 전담 문의",
+      "date": "2026-07-22",
+      "time": "13:30",
+      "endTime": "16:18",
+      "category": "다인이",
+      "type": "task",
+      "location": "",
+      "memo": "",
+      "attachments": [],
+      "reminders": [],
+      "done": false,
+      "notionId": "3a37851f-c778-819d-aa5e-ddf27de0bd09",
       "registered": {
         "notion": true
       }
