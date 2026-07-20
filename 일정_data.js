@@ -203,6 +203,24 @@ window.SCHEDULE_DATA = {
       "registered": {
         "notion": true
       }
+    },
+    {
+      "id": "app-1784514085853",
+      "title": "집안일",
+      "date": "2026-07-20",
+      "time": "17:05",
+      "endTime": "",
+      "category": "개인·루틴",
+      "type": "task",
+      "location": "",
+      "memo": "1. 이불 정리\n2. 다인이 옷 정리+옷방 문고리 변경\n3. 고장난 가전 버리기\n4. 큰 쓰레기봉지 -> 버리기\n5. 쌀 냉장고 구입\n6. 부엌 베란다 정리+먼지 닦기\n7. 거실 베란다 정리+먼지 닦기+고양이 문 설치",
+      "attachments": [],
+      "reminders": [],
+      "done": false,
+      "notionId": "3a37851f-c778-8148-ab4f-c1c6f22c4d6e",
+      "registered": {
+        "notion": true
+      }
     }
   ],
   "recurring": [],
