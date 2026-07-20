@@ -169,24 +169,6 @@ window.SCHEDULE_DATA = {
       }
     },
     {
-      "id": "app-1783999803532-460",
-      "title": "오늘까지 할 일",
-      "date": "2026-07-14",
-      "time": "",
-      "endTime": "",
-      "category": "담임업무",
-      "type": "task",
-      "location": "",
-      "memo": "",
-      "attachments": [],
-      "reminders": [],
-      "done": false,
-      "notionId": "39d7851f-c778-81a2-8631-e2e56dd565d1",
-      "registered": {
-        "notion": true
-      }
-    },
-    {
       "id": "app-1784513949224",
       "title": "곡정초 방과후 업무, 전담 문의",
       "date": "2026-07-22",
@@ -230,6 +212,7 @@ window.SCHEDULE_DATA = {
     "app-1781694078046",
     "app-1781694048363",
     "task-20260618-call-0900",
-    "task-20260618-call-1130"
+    "task-20260618-call-1130",
+    "app-1783999579478"
   ]
 };
